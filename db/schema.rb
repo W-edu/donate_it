@@ -10,10 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_26_164102) do
+ActiveRecord::Schema.define(version: 2021_03_26_171405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "drop_off_locations", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "type"
+    t.string "email"
+    t.string "phone_number"
+  end
+
+  create_table "opening_times", force: :cascade do |t|
+    t.string "day"
+    t.time "opening_time"
+    t.time "closing_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "drop_off_locations_id"
+    t.index ["drop_off_locations_id"], name: "index_opening_times_on_drop_off_locations_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +47,5 @@ ActiveRecord::Schema.define(version: 2021_03_26_164102) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "opening_times", "drop_off_locations", column: "drop_off_locations_id"
 end

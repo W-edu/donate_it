@@ -1,0 +1,2 @@
+class DropOffLocation < ApplicationRecord
+end
