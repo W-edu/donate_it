@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>Drop off locations</h1>
+  <% @dropofflocations.each do |location| %>
+    <div class="card-container">
+      <h3><%= location.name %></h3>
+      <p><%= location.address %></p>
+      <% if location.drop_type == "arrangement" %>
+        <p>Please arrange a drop off time by contacting:</p>
+        <p><%= location.phone_number %></p>
+        <p><%= location.email %></p>
+      <% else %>
+        <table>
+          <tr>
+            <td>Monday</td>
+            <td>00:00:00 to 00:00:00</td>            
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>00:00:00 to 00:00:00</td>            
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>00:00:00 to 00:00:00</td>            
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>00:00:00 to 00:00:00</td>            
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>00:00:00 to 00:00:00</td>            
+          </tr>
+        </table>
+      <% end %>
+    </div>
+  <% end %>
+</div>
