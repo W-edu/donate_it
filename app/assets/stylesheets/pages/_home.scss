@@ -1,1 +1,45 @@
-// Specific CSS for your home-page
+
+//NAVBAR STRIPE
+
+
+
+// BANNER STRIPE
+
+.banner-stripe {
+  background-image: url("https://res.cloudinary.com/dlm5qwdjs/image/upload/v1617728193/DonateIT/mobile-home-banner-shrunk_ntbqja.png");
+  height: 38em;
+}
+
+banner-content {
+  align-items: center;
+  justify-content: center;
+  padding: auto 0;
+
+}
+
+.banner-blurb {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .5em;
+
+  color: white;
+  align-items: center;
+  text-align: center;
+
+}
+
+.donate-button-variable {
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 13em;
+  background-color: $persimmon;
+}
+
+ 
+
+// xxxx STRIPE
+
+
+
+// xxxx STRIPE
