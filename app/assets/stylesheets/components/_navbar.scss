@@ -20,5 +20,13 @@
 
 .navbar-title-link {
   margin: 0;
-  padding: 0 .6em;
+  // padding: 0 .6em;
+  a {
+    text-decoration: none;
+  }
+}
+
+.navbar-logo {
+  padding: .5em;
+  height: 2em;
 }

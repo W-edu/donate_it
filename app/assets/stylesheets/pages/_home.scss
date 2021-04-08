@@ -1,3 +1,16 @@
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  margin: 0;
+  color: $onyx;
+}
+
+.content-container {
+  margin: 0 15px;
+}
 
 //NAVBAR STRIPE
 
@@ -6,6 +19,7 @@
 // BANNER STRIPE
 
 .banner-stripe {
+  width: 100%;
   background-image: url("https://res.cloudinary.com/dlm5qwdjs/image/upload/v1617728193/DonateIT/mobile-home-banner-shrunk_ntbqja.png");
   // height: 38em;
 }
@@ -25,33 +39,52 @@ banner-content {
 
   display: flex;
   flex-direction: column;
-
   color: white;
   text-align: center;
   justify-content: center;
+  align-items: center;
 
+  h1 {
+    width: 7em;
+    font-size: 36px;
+
+  }
+
+  h3 {
+    width: 13em;
+    font-size: 24px;
+  }
 }
 
 .donate-button-variable {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-  height: 4em;
-  width: 13em;
+  color: white;
   background-color: $persimmon;
-  margin: 2em auto 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 22px 43px;
 }
 
-.donate-button-text {
-  justify-content: center;
-  text-align: center;
+.donate-button-variable:hover {
+  background: white;
+  color: black;
 }
 
- 
+// call-to-action STRIPE
+
+.call-to-action-stripe {
+  background: white;
+  height: 9em;
+  .container {
+    justify-content: center;
+    align-items: center;
+    padding: auto 0;
+  }
+}
 
 // xxxx STRIPE
 
+.who-you-are-helping-stripe {
+  background: white;
+}
 
-
-// xxxx STRIPE
