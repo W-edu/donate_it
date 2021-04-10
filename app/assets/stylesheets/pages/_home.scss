@@ -4,12 +4,13 @@ body {
 }
 
 hr {
+  display: none;
   margin: 0;
   color: $onyx;
 }
 
 .content-container {
-  margin: 0 15px;
+  margin: 50px auto;
 }
 
 //NAVBAR STRIPE
@@ -21,18 +22,18 @@ hr {
 .banner-stripe {
   width: 100%;
   background-image: url("https://res.cloudinary.com/dlm5qwdjs/image/upload/v1617728193/DonateIT/mobile-home-banner-shrunk_ntbqja.png");
-  // height: 38em;
+  height: 38em;
 }
 
 banner-content {
   align-items: center;
   justify-content: center;
   padding: auto 0;
+  // height: 38em;
 
 }
 
 .banner-blurb {
-  height: 38em;
   // display: grid;
   // grid-template-columns: 1fr;
   // grid-gap: .5em;
@@ -56,6 +57,17 @@ banner-content {
   }
 }
 
+@media (min-width: 40em) {
+  .banner-blurb {
+    height: 410px;
+    width: 505px;
+    background-color: $persimmon;
+    position: relative;
+    top: 280px;
+    left: 640px;
+  }
+}
+
 .donate-button-variable {
   color: white;
   background-color: $persimmon;
@@ -75,11 +87,53 @@ banner-content {
 .call-to-action-stripe {
   background: white;
   height: 9em;
+  padding-top: 50px;
   .container {
     justify-content: center;
     align-items: center;
     padding: auto 0;
   }
+}
+
+// who-helping STRIPE
+
+.who-helping-stripe {
+  padding: 50px 0;
+  background-color: $background-grey;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: .5em;
+}
+
+.info-card {
+  display: none;
+}
+
+#first-card {
+  display: block;
+}
+
+.card-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 1em 0;
+  position: absolute;
+  bottom: .25em;
+  width: 100%;
+  text-align: center;
+  background-color: rgba( $persimmon, .5 );
+}
+
+@media (min-width: 40em) {
+  .cards-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .info-card {
+    display: block;
+  } 
 }
 
 // who-you-are-helping STRIPE

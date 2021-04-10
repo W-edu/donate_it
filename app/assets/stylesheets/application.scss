@@ -12,32 +12,32 @@
 @import "components/index";
 @import "pages/index";
 
-.container {
+.content-container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-@media (min-width: 576) {
-  .container {
-    max-width: 540;
+@media (min-width: 576px) {
+  .content-container {
+    max-width: 540px;
   }
 }
 
-@media (min-width: 768) {
-  .container {
-    max-width: 720;
+@media (min-width: 768px) {
+  .content-container {
+    max-width: 720px;
   }
 }
 
-@media (min-width: 992) {
-  .container {
-    max-width: 960;
+@media (min-width: 992px) {
+  .content-container {
+    max-width: 960px;
   }
 }
 
-@media (min-width: 1200) {
-  .container {
-    max-width: 1140;
+@media (min-width: 1200px) {
+  .content-container {
+    max-width: 1140px;
   }
 }
