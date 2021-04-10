@@ -131,12 +131,12 @@ banner-content {
   background-color: rgba(0,0,0,0.8);
 }
 
-.text {
+.slide-text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 1em 0;
   position: absolute;
-  bottom: 8px;
+  bottom: .25em;
   width: 100%;
   text-align: center;
   background-color: rgba( $persimmon, .5 );
@@ -173,12 +173,21 @@ banner-content {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .7}
   to {opacity: 1}
+}
+
+// FOOTER
+
+.bottom-donate-button {
+  display: flex;
+  height: 10em;
+  justify-content: center;
+  align-items: center;
 }
 
